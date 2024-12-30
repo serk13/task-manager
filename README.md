@@ -1,59 +1,148 @@
-# TaskManager
+# Task Manager
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
+Eine einfache Angular-Anwendung zur Verwaltung von Aufgaben (Tasks).
 
-## Development server
+## Funktionen
 
-To start a local development server, run:
+- Aufgaben erstellen und zur Liste hinzufügen
+- Aufgaben als erledigt markieren
+- Aufgaben löschen
+- Automatische Speicherung im Browser (localStorage)
+- Responsive Benutzeroberfläche
+
+## Technische Details
+
+- Angular Version: 16+
+- Verwendung von TypeScript
+- Komponenten-basierte Architektur
+- Two-Way-Databinding
+- Lokale Datenspeicherung
+
+## Installation
+
+1. Repository klonen:
+   ```bash
+   git clone [repository-url]
+   ```
+
+2. In das Projektverzeichnis wechseln:
+   ```bash
+   cd task-manager
+   ```
+
+3. Abhängigkeiten installieren:
+   ```bash
+   npm install
+   ```
+
+4. Entwicklungsserver starten:
+   ```bash
+   ng serve
+   ```
+
+5. Im Browser öffnen:
+   ```
+   http://localhost:4200
+   ```
+
+## Projektstruktur
+```
+task-manager/
+├── src/
+│   ├── app/
+│   │   ├── tasks/
+│   │   │   ├── tasks.component.ts
+│   │   │   ├── tasks.component.html
+│   │   │   └── tasks.component.css
+│   │   ├── app.component.ts
+│   │   ├── app.component.html
+│   │   └── app.module.ts
+│   └── ...
+└── ...
+```
+
+## Verwendung
+
+- Neue Aufgabe: Text in das Eingabefeld eingeben und "Hinzufügen" klicken oder Enter drücken
+- Aufgabe als erledigt markieren: Checkbox neben der Aufgabe anklicken
+- Aufgabe löschen: "Löschen"-Button neben der Aufgabe klicken
+
+## Entwicklung
+
+- Komponenten-Logik befindet sich in `tasks.component.ts`
+- HTML-Template in `tasks.component.html`
+- Styling in `tasks.component.css`
+
+## Entwicklungsserver
+
+Starten Sie einen lokalen Entwicklungsserver mit:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Öffnen Sie dann Ihren Browser und navigieren Sie zu `http://localhost:4200/`. Die Anwendung wird automatisch neu geladen, wenn Sie Änderungen an den Quelldateien vornehmen.
 
-## Code scaffolding
+## Code-Generierung
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Die Angular CLI enthält leistungsstarke Code-Generierungstools. Um eine neue Komponente zu erstellen, führen Sie aus:
 
 ```bash
 ng generate component component-name
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Für eine vollständige Liste der verfügbaren Schematics (wie `components`, `directives` oder `pipes`), führen Sie aus:
 
 ```bash
 ng generate --help
 ```
 
-## Building
+## Build
 
-To build the project run:
+Um das Projekt zu erstellen, führen Sie aus:
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Dies kompiliert Ihr Projekt und speichert die Build-Artefakte im `dist/`-Verzeichnis. Standardmäßig optimiert der Produktions-Build Ihre Anwendung für Leistung und Geschwindigkeit.
 
-## Running unit tests
+## Unit-Tests ausführen
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Um Unit-Tests mit dem [Karma](https://karma-runner.github.io) Test-Runner auszuführen, verwenden Sie:
 
 ```bash
 ng test
 ```
 
-## Running end-to-end tests
+## End-to-End-Tests ausführen
 
-For end-to-end (e2e) testing, run:
+Für End-to-End (E2E) Tests führen Sie aus:
 
 ```bash
 ng e2e
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Die Angular CLI kommt standardmäßig nicht mit einem End-to-End-Testing-Framework. Sie können eines wählen, das Ihren Anforderungen entspricht.
 
-## Additional Resources
+## Weitere Ressourcen
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Weitere Informationen zur Verwendung der Angular CLI, einschließlich detaillierter Befehlsreferenzen, finden Sie auf der [Angular CLI Übersicht und Befehlsreferenz](https://angular.dev/tools/cli)-Seite.
+
+## Autor
+
+[Ihr Name]
+
+## Lizenz
+
+MIT
+```
+
+Die wichtigsten Korrekturen waren:
+- Konsistente Formatierung der Markdown-Syntax
+- Korrektur von "Development Server" zu "Entwicklungsserver"
+- Bindestrich-Korrekturen bei zusammengesetzten Wörtern (z.B. "Unit-Tests", "End-to-End-Tests")
+- Konsistente Verwendung von Anführungszeichen
+- Korrektur der Grammatik und Rechtschreibung
+- Verbesserung der Lesbarkeit durch einheitliche Formatierung
+
